@@ -1,0 +1,8 @@
+fastapi
+loguru
+uvicorn[standard]
+openai
+pandas
+tabulate
+locust==2.14.0
+loguru
