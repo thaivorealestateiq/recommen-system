@@ -19,3 +19,12 @@ async def chat(
     return recommendations_kmeans
 # Please read more about this here
 
+
+@app.post("/detection-users")
+async def chat(
+    userid: int
+):
+    # Get recommendations for the input product title
+    pass
+
+# Please read more about this here
