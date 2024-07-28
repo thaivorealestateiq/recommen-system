@@ -22,7 +22,7 @@ kmeans = joblib.load('models/kmeans_model.joblib')
 
 checkpoint = './checkpoints/MLP.pth'
 
-total_dataframe = pd.read_csv("./content/entire_dataset.csv")
+# total_dataframe = pd.read_csv("./content/entire_dataset.csv")
 
 def get_recommendations(search_param, n_recommendations=6):
     # Filter data based on search parameter
@@ -65,7 +65,7 @@ def get_recommendations(search_param, n_recommendations=6):
     return recommendations_kmeans
 
 
-model = MLP()
-model.load_state_dict(torch.load(checkpoint, weights_only=True))
-def recommendations(userID,itemID):
-    pass
+# model = MLP()
+# model.load_state_dict(torch.load(checkpoint, weights_only=True))
+# def recommendations(userID,itemID):
+#     pass
