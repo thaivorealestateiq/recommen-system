@@ -9,7 +9,7 @@ security = HTTPBasic()
 
 
 @app.post("/detection")
-async def chat(
+async def recommendationSearch(
     title: str
 ):
     print(title)
@@ -21,7 +21,7 @@ async def chat(
 
 
 @app.post("/detection-users")
-async def chat(
+async def recommendationUser(
     userid: int
 ):
     # Get recommendations for the input product title
